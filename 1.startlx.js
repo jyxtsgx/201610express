@@ -6,7 +6,16 @@ var app =express();
 app.get('/',function(req,res){
     res.end('hello world');
 });
-app.get('/student',function(req,res){
-    res.end('hello student');
+app.post('/',function(req,res){
+    res.end(' post hello student');
 });
+app.delete('/',function(req,res){
+    res.end(' delete hello student');
+});
+app.put('/',function(req,res){
+    res.end(' put hello student');
+});
+
+
+
 app.listen(8080);
